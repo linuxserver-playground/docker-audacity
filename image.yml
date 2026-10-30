@@ -15,6 +15,10 @@ upstream:
       replace: ''
     require_assets:
       - asset: '^audacity\-linux\-.*\-x86_64\.AppImage$'
+  notes:
+    type: github_release
+    repo: audacity/audacity
+    tag: Audacity-${VERSION}
 
 release:
   branch: main
