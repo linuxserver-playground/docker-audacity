@@ -13,6 +13,8 @@ upstream:
     transform:
     - regex: ^Audacity-
       replace: ''
+    require_assets:
+      - asset: '^audacity\-linux\-.*\-x86_64\.AppImage$'
 
 release:
   branch: main
